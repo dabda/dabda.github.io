@@ -11,6 +11,12 @@
 
       <div class="Col-0">
 
+        <a id="goto_about" href="#top"></a>
+        <a id="goto_breweries" href="#breweries"></a>
+        <a id="goto_music" href="#music"></a>
+        <a id="goto_food" href="#food"></a>
+        <a id="goto_timeline" href="#timeline"></a>
+
         <div class="beer_can">
           <img class="gif" src="img/can.gif"></img>
         </div>
@@ -39,7 +45,11 @@
             s-86,116-94,176"/>
             <text id="menu_text" font-size="20">
             <textPath id="visina" xlink:href="#MyPath" startOffset="50">
-              <a id="menu_about" class="enlarge precrtaj" href="#top" onclick="scroll_to_top()">about</a>&emsp;&nbsp;<a id="menu_breweries" class="enlarge" href="#breweries" onclick="scroll_to_top()">breweries</a>&emsp;&nbsp;<a id="menu_music" class="enlarge" href="#music" onclick="scroll_to_top()">music</a>&emsp;&nbsp;<a id="menu_food" class="enlarge" href="#food" onclick="scroll_to_top()">food</a>&emsp;&nbsp;<a id="menu_timeline" class="enlarge" href="#timeline" onclick="scroll_to_top()">timeline</a>
+              <a id="menu_about" class="enlarge precrtaj" href="#">about</a>&emsp;&nbsp;
+              <a id="menu_breweries" class="enlarge" href="#">breweries</a>&emsp;&nbsp;
+              <a id="menu_music" class="enlarge" href="#">music</a>&emsp;&nbsp;
+              <a id="menu_food" class="enlarge" href="#">food</a>&emsp;&nbsp;
+              <a id="menu_timeline" class="enlarge" href="#">timeline</a>
             </textPath>
             </text>
           </svg>
@@ -80,7 +90,6 @@
 
 
       <div class="Col-2">
-
         <div class="bevog_brewery">
           <object type="image/svg+xml" data="img/bevog_brewery.svg"></object>
         </div>
@@ -120,8 +129,8 @@
         </div>
       </div>
 
-
-      <div class="Col-4" id="breweries">
+      <div id="breweries"></div>
+      <div class="Col-4">
         <div class="the_best_craft_breweries">
           <object type="image/svg+xml" data="img/the_best_craft_breweries.svg"></object>
         </div>
@@ -195,8 +204,8 @@
         </div>
       </div>
 
-
-      <div class="Col-6" id="music">
+      <div id="music"></div>
+      <div class="Col-6">
         <div class="slika4">
           <img class="gif" src="img/keg_2x.gif"></img>
         </div>
@@ -219,7 +228,8 @@
       </div>
 
 
-      <div class="Col-7" id="food">
+      <div id="food"></div>
+      <div class="Col-7">
         <div class="slika5">
         <img class="gif" src="img/stuplin_2x.gif"></img>
         </div>
@@ -238,8 +248,8 @@
         </div>
       </div>
 
-
-      <div class="Col-8" id="timeline">
+      <div id="timeline"></div>
+      <div class="Col-8">
         <div class="timeline">
           <object type="image/svg+xml" data="img/timeline.svg"></object>
         </div>
@@ -311,7 +321,6 @@
           organize weekend trips and sleep in one of the <br>
           beautiful hotels or even a spa. We are surrounded <br>
           by beautiful nature which offers many attractions. <br>
-
           <br>
           </span>
         </div>
@@ -374,7 +383,8 @@
     </div><!-- End of container-->
   </body>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/scroll.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 
 </html>
