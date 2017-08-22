@@ -58,6 +58,9 @@ div{
 #menu_text{
   font-family: regular_rotalic;
 }
+.precrtaj{
+  text-decoration:line-through;
+}
 
 div.vektor{
   width: 20%;
@@ -80,7 +83,7 @@ div.vektor{
 }
 .enlarge:hover{
   font-size: 110%;
-      text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 div.beer_can {
