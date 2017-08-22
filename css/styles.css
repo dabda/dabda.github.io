@@ -2,7 +2,7 @@ body{
   background-color: #fed600;
 }
 div{
-    /* border: dashed;   */
+     /* border: dashed 1px;   */
 }
 
 .container {
@@ -56,7 +56,7 @@ div{
   line-height:175%;
 }
 #menu_text{
-  font-family: medium_rotalic;
+  font-family: regular_rotalic;
 }
 
 div.vektor{
@@ -72,14 +72,15 @@ div.vektor{
   float: right;
 }
 .enlarge{
-  -webkit-transition: all 0.5s ease; /* Safari and Chrome */
-  -moz-transition: all 0.5s ease; /* Firefox */
-  -ms-transition: all 0.5s ease; /* IE 9 */
-  -o-transition: all 0.5s ease; /* Opera */
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.2s ease; /* Safari and Chrome */
+  -moz-transition: all 0.2s ease; /* Firefox */
+  -ms-transition: all 0.2s ease; /* IE 9 */
+  -o-transition: all 0.2s ease; /* Opera */
+  transition: all 0.2s ease;
 }
 .enlarge:hover{
-  font-size: 125%;
+  font-size: 110%;
+      text-decoration: line-through;
 }
 
 div.beer_can {
@@ -105,36 +106,37 @@ div.datum {
 }
 
 div.facebook{
-  width:3%;
-  margin-left: 13%;
-  margin-top: -4%;
+  width:2.7%;
+  margin-left: 11%;
+  margin-top: -2%;
   vertical-align:top;
   display: inline-block;
 }
 .facebook img{
-  -webkit-transition: all 1s ease; /* Safari and Chrome */
-  -moz-transition: all 1s ease; /* Firefox */
-  -ms-transition: all 1s ease; /* IE 9 */
-  -o-transition: all 1s ease; /* Opera */
-  transition: all 1s ease;
+  -webkit-transition: all 0.2s ease; /* Safari and Chrome */
+  -moz-transition: all 0.2s ease; /* Firefox */
+  -ms-transition: all 0.2s ease; /* IE 9 */
+  -o-transition: all 0.2s ease; /* Opera */
+  transition: all 0.2s ease;
 }
 .facebook:hover img{
-  -webkit-transform:scale(1.25); /* Safari and Chrome */
-  -moz-transform:scale(1.25); /* Firefox */
-  -ms-transform:scale(1.25); /* IE 9 */
-  -o-transform:scale(1.25); /* Opera */
-   transform:scale(1.25);
+  -webkit-transform:scale(1.1); /* Safari and Chrome */
+  -moz-transform:scale(1.1); /* Firefox */
+  -ms-transform:scale(1.1); /* IE 9 */
+  -o-transform:scale(1.1); /* Opera */
+   transform:scale(1.1);
+
 }
 div.logo {
-  width:24%;
-  margin-left: 7%;
-  margin-top: -6%;
+  width:21%;
+  margin-left: 9%;
+  margin-top: -3.5%;
   vertical-align:top;
   display: inline-block;
 }
 div.opis_festivala {
-  margin-left:7%;
-	margin-top: -5%;
+  margin-left:9.5%;
+	margin-top: -3%;
   /* Rotate div */
   -ms-transform: rotate(5deg); /* IE 9 */
   -webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
@@ -145,15 +147,15 @@ div.opis_festivala {
 
 div.bevog_brewery{
   width: 30%;
-  margin-left: 27%;
-  margin-top: -6%;
+  margin-left: 26%;
+  margin-top: -5%;
   vertical-align:top;
   display: inline-block;
 }
 div.slika1{
   width: 15%;
-  margin-left: 65%;
-  margin-top: -8%;
+  margin-left: 60%;
+  margin-top: -10%;
   vertical-align:top;
   display: inline-block;
 }
@@ -162,7 +164,7 @@ div.slika1{
 }
 div.how_to_get_to_festival{
   width: 7%;
-  margin-left: 2%;
+  margin-left: 3%;
   margin-top: -9%;
   vertical-align:top;
   display: inline-block;
@@ -188,11 +190,12 @@ div.lokacija{
 }
 
 div.the_best_craft_breweries{
-  width: 9%;
+  width: 10%;
   margin-left: 18%;
   margin-top: 4%;
   vertical-align:top;
   display: inline-block;
+  transform: rotate(-6deg);
 }
 div.breweries{
   margin-left: 2%;
@@ -245,13 +248,14 @@ div.Col-6{
 }
 div.slika4{
   width: 26%;
-  margin-left: 21%;
+  margin-left: 24%;
+  margin-top: -6%;
   vertical-align:top;
   display: inline-block; 
 }
 div.music{
   margin-top: 3%;
-  margin-left: 10%;
+  margin-left: 6%;
   vertical-align:top;
   display: inline-block; 
   -ms-transform: rotate(356deg); /* IE 9 */
@@ -276,8 +280,8 @@ div.slika5{
   display: inline-block; 
 }
 div.golar{
-  margin-top: 6%;
-  margin-left: 5%;
+  margin-top: 11%;
+  margin-left: 6%;
   vertical-align:top;
   display: inline-block; 
   -ms-transform: rotate(2deg); /* IE 9 */
@@ -286,8 +290,8 @@ div.golar{
 }
 div.delicious_food{
   width: 28%;
-  margin-left: -17%;
-  margin-top: -8%;
+  margin-left: -26%;
+  margin-top: -3%;
   vertical-align:top;
   display: inline-block;
 }
@@ -333,7 +337,7 @@ div.rules1{
 div.rules2{
   margin-top: 1%;
   margin-left: 2%;
-  margin-bottom: 20%;
+  margin-bottom: 35%;
   vertical-align:top;
   display: inline-block; 
   -ms-transform: rotate(355deg); /* IE 9 */
@@ -395,13 +399,13 @@ div.rules2{
       margin: 0 auto;
   }
   .title_text {
-    font-size: 19px;
-  }
-  .normal_text {
     font-size: 17px;
   }
+  .normal_text {
+    font-size: 15px;
+  }
   .small_text {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 
@@ -411,12 +415,12 @@ div.rules2{
       margin: 0 auto;
   }
   .title_text {
-    font-size: 22px;
-  }
-  .normal_text {
     font-size: 20px;
   }
+  .normal_text {
+    font-size: 18px;
+  }
   .small_text {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
