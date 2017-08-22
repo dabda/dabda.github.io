@@ -1,0 +1,422 @@
+body{
+  background-color: #fed600;
+}
+div{
+    /* border: dashed;   */
+}
+
+.container {
+  background: url(../img/WCFB_background2x.jpg) no-repeat center top;
+  background-size: 100% auto;
+  background-color: #fed600;
+  overflow:hidden;
+}
+
+@font-face {
+  font-family: "regular_rotalic";
+  src: url(../fonts/GT-Haptik-Regular-Rotalic.woff) format('woff');
+}
+
+@font-face {
+  font-family: "light_rotalic";
+  src: url(../fonts/GT-Haptik-Light-Rotalic.woff) format('woff');
+}
+
+@font-face {
+  font-family: "medium_rotalic";
+  src: url(../fonts/GT-Haptik-Medium-Rotalic.woff) format('woff');
+}
+
+.regular_rotalic{
+  font-family: regular_rotalic;
+}
+.light_rotalic{
+  font-family: light_rotalic;
+}
+.medium_rotalic{
+  font-family: medium_rotalic;
+}
+
+.title_text{
+  font-size: 1.45vw;
+}
+.normal_text{
+  font-size: 1.3vw;
+}
+.small_text{
+  font-size: 0.9vw;
+}
+.red_text{
+  color:#ed1a55;
+}
+.blue_text{
+  color: #00B3F0;
+}
+.line_height{
+  line-height:175%;
+}
+#menu_text{
+  font-family: medium_rotalic;
+}
+
+div.vektor{
+  width: 20%;
+  margin-left: -9%;
+  margin-right: 1.5%;
+  margin-top: 12%;
+  margin-bottom: -300%;
+  z-index: 100;
+  position:relative;
+  vertical-align:top;
+  display: inline-block;
+  float: right;
+}
+.enlarge{
+  -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+  -moz-transition: all 0.5s ease; /* Firefox */
+  -ms-transition: all 0.5s ease; /* IE 9 */
+  -o-transition: all 0.5s ease; /* Opera */
+  transition: all 0.5s ease;
+}
+.enlarge:hover{
+  font-size: 125%;
+}
+
+div.beer_can {
+  width:40.2%;
+  vertical-align:top;
+  display: inline-block;
+}
+.gif {
+  width: 100%;
+}
+div.rock_stage{
+  width: 35%;
+  margin-left: -12%;
+  margin-top: 10%;
+  vertical-align:top;
+  display: inline-block;
+}
+div.datum {
+  width:20%;
+  margin-top:5%;
+  vertical-align:top;
+  display: inline-block;
+}
+
+div.facebook{
+  width:3%;
+  margin-left: 13%;
+  margin-top: -4%;
+  vertical-align:top;
+  display: inline-block;
+}
+.facebook img{
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+.facebook:hover img{
+  -webkit-transform:scale(1.25); /* Safari and Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* IE 9 */
+  -o-transform:scale(1.25); /* Opera */
+   transform:scale(1.25);
+}
+div.logo {
+  width:24%;
+  margin-left: 7%;
+  margin-top: -6%;
+  vertical-align:top;
+  display: inline-block;
+}
+div.opis_festivala {
+  margin-left:7%;
+	margin-top: -5%;
+  /* Rotate div */
+  -ms-transform: rotate(5deg); /* IE 9 */
+  -webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+  transform: rotate(5deg);
+  vertical-align:top;
+  display: inline-block;
+}
+
+div.bevog_brewery{
+  width: 30%;
+  margin-left: 27%;
+  margin-top: -6%;
+  vertical-align:top;
+  display: inline-block;
+}
+div.slika1{
+  width: 15%;
+  margin-left: 65%;
+  margin-top: -8%;
+  vertical-align:top;
+  display: inline-block;
+}
+.mp4{
+  width: 100%;
+}
+div.how_to_get_to_festival{
+  width: 7%;
+  margin-left: 2%;
+  margin-top: -9%;
+  vertical-align:top;
+  display: inline-block;
+}
+
+div.Col-3{
+  margin-top: -10%;
+}
+div.slika2{
+  width: 23%;
+  margin-left: 24%;
+  vertical-align:top;
+  display: inline-block;
+}
+div.lokacija{
+  margin-left: 8%;
+  margin-top: 2%;
+  vertical-align:top;
+  display: inline-block;
+  -ms-transform: rotate(355.5deg); /* IE 9 */
+  -webkit-transform: rotate(355.5deg); /* Chrome, Safari, Opera */
+  transform: rotate(355.5deg);
+}
+
+div.the_best_craft_breweries{
+  width: 9%;
+  margin-left: 18%;
+  margin-top: 4%;
+  vertical-align:top;
+  display: inline-block;
+}
+div.breweries{
+  margin-left: 2%;
+  margin-top: 5%;
+  vertical-align:top;
+  display: inline-block;
+  -ms-transform: rotate(3deg); /* IE 9 */
+  -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+  transform: rotate(3deg);
+}
+div.slika3{
+  width: 20%;
+  margin-top: 10%;
+  margin-left: 0%;
+  vertical-align:top;
+  display: inline-block;
+}
+
+div.Col-5{
+  margin-top: 5%;
+}
+div.more_than_70_beers{
+  width: 25%;
+  margin-left: 14%;
+  margin-top: -2%;
+  vertical-align:top;
+  display: inline-block;
+}
+div.conference{
+  margin-top: 5%;
+  margin-left: -14%;
+  vertical-align:top;
+  display: inline-block; 
+  -ms-transform: rotate(356deg); /* IE 9 */
+  -webkit-transform: rotate(356deg); /* Chrome, Safari, Opera */
+  transform: rotate(356deg);
+}
+div.kids{
+  margin-left: 5%;
+  margin-top: 3%;
+  vertical-align:top;
+  display: inline-block; 
+  -ms-transform: rotate(356deg); /* IE 9 */
+  -webkit-transform: rotate(356deg); /* Chrome, Safari, Opera */
+  transform: rotate(356deg);
+}
+
+div.Col-6{
+  margin-top: 8%;
+}
+div.slika4{
+  width: 26%;
+  margin-left: 21%;
+  vertical-align:top;
+  display: inline-block; 
+}
+div.music{
+  margin-top: 3%;
+  margin-left: 10%;
+  vertical-align:top;
+  display: inline-block; 
+  -ms-transform: rotate(356deg); /* IE 9 */
+  -webkit-transform: rotate(356deg); /* Chrome, Safari, Opera */
+  transform: rotate(356deg);
+}
+div.awesome_rock_stage{
+  width: 8%;
+  margin-left: -5%;
+  margin-top: -8%;
+  vertical-align:top;
+  display: inline-block;
+}
+
+div.Col-7{
+  margin-top: 7%;
+}
+div.slika5{
+  width: 26%;
+  margin-left: 21%;
+  vertical-align:top;
+  display: inline-block; 
+}
+div.golar{
+  margin-top: 6%;
+  margin-left: 5%;
+  vertical-align:top;
+  display: inline-block; 
+  -ms-transform: rotate(2deg); /* IE 9 */
+  -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+  transform: rotate(2deg);
+}
+div.delicious_food{
+  width: 28%;
+  margin-left: -17%;
+  margin-top: -8%;
+  vertical-align:top;
+  display: inline-block;
+}
+
+div.Col-8{
+  margin-top: 12%;
+}
+div.timeline{
+  width: 18%;
+  margin-left: 10%;
+  margin-top: -8%;
+  vertical-align:top;
+  display: inline-block;
+}
+div.time_table{
+  margin-left: 0%;
+  vertical-align:top;
+  display: inline-block; 
+  -ms-transform: rotate(355deg); /* IE 9 */
+  -webkit-transform: rotate(355deg); /* Chrome, Safari, Opera */
+  transform: rotate(355deg);
+}
+div.band_time_table{
+  margin-left: 8%;
+  vertical-align:top;
+  display: inline-block; 
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+  transform: rotate(10deg);
+}
+
+div.Col-9{
+  margin-top: 7%;
+}
+div.rules1{
+  margin-left: 27%;
+  vertical-align:top;
+  display: inline-block; 
+  -ms-transform: rotate(355deg); /* IE 9 */
+  -webkit-transform: rotate(355deg); /* Chrome, Safari, Opera */
+  transform: rotate(355deg);
+}
+div.rules2{
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-bottom: 20%;
+  vertical-align:top;
+  display: inline-block; 
+  -ms-transform: rotate(355deg); /* IE 9 */
+  -webkit-transform: rotate(355deg); /* Chrome, Safari, Opera */
+  transform: rotate(355deg);
+}
+
+@media (min-width: 768px) { 
+  .container {
+      width: 750px;
+      margin: 0 auto;
+  }
+  .title_text {
+    font-size: 13px;
+  }
+  .normal_text {
+    font-size: 11px;
+  }
+  .small_text {
+    font-size: 6px;
+  }
+}
+
+@media (min-width: 992px) { 
+  .container {
+      width: 970px;
+      margin: 0 auto;
+  }
+  .title_text {
+    font-size: 16px;
+  }
+  .normal_text {
+    font-size: 14px;
+  }
+  .small_text {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 1100px) { 
+  .container {
+      width: 1080px;
+      margin: 0 auto;
+  }
+  .title_text {
+    font-size: 15px;
+  }
+  .normal_text {
+    font-size: 13px;
+  }
+  .small_text {
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .container {
+      width: 1170px;
+      margin: 0 auto;
+  }
+  .title_text {
+    font-size: 19px;
+  }
+  .normal_text {
+    font-size: 17px;
+  }
+  .small_text {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1460px) {
+  .container {
+      width: 1430px;
+      margin: 0 auto;
+  }
+  .title_text {
+    font-size: 22px;
+  }
+  .normal_text {
+    font-size: 20px;
+  }
+  .small_text {
+    font-size: 12px;
+  }
+}
