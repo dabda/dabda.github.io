@@ -43,21 +43,21 @@ $(document).ready(function() {
         $("#menu_food").removeClass("precrtaj");
         $("#menu_timeline").removeClass("precrtaj");
       }
-      else if (razmerje >= 800 && razmerje < 1600) {
+      else if (razmerje >= 800 && razmerje < 2000) {
         $("#menu_about").removeClass("precrtaj");
         $("#menu_breweries").addClass("precrtaj");
         $("#menu_music").removeClass("precrtaj");
         $("#menu_food").removeClass("precrtaj");
         $("#menu_timeline").removeClass("precrtaj");
       }
-      else if (razmerje >= 1600 && razmerje < 2400) {
+      else if (razmerje >= 2000 && razmerje < 2600) {
         $("#menu_about").removeClass("precrtaj");
         $("#menu_breweries").removeClass("precrtaj");
         $("#menu_music").addClass("precrtaj");
         $("#menu_food").removeClass("precrtaj");
         $("#menu_timeline").removeClass("precrtaj");
       }
-      else if (razmerje >= 2400 && razmerje < 3200) {
+      else if (razmerje >= 2600 && razmerje < 3200) {
         $("#menu_about").removeClass("precrtaj");
         $("#menu_breweries").removeClass("precrtaj");
         $("#menu_music").removeClass("precrtaj");
