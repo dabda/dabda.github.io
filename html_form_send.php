@@ -67,8 +67,37 @@ $headers = 'From: '.$email_from."\r\n".
 ?>
 
 <!-- place your own success html below -->
+<body>
 
-Thank you for contacting us. We will be in touch with you very soon.
+<div class="success">
+  <span class="small_text red_text regular_rotalic">
+      SUCCESS<br>
+      <br>
+      Thank you for contacting us.<br>
+      We will be in touch with you very soon.<br>
+    </span>
+</div>
+
+<style>
+	body{
+	  background-color:#00B3F0;
+	}
+	.success{
+	  width:20%;
+	  margin-top:30%;
+	  margin-left:40%;
+	  vertical-align:top;
+	  display: inline-block; 
+	  border: solid white;
+	  -ms-transform: rotate(355deg); /* IE 9 */
+	  -webkit-transform: rotate(355deg); /* Chrome, Safari, Opera */
+	  transform: rotate(355deg);
+	  font-size: 1.5vw;
+	  }
+</style>
+
+</body>
+
 
 <?php
 }
