@@ -60,3 +60,8 @@ $("#menu_timeline").click(function(){
     $("#goto_timeline").click(); 
     return false;
 });
+
+//used for nicer load of page
+$(window).on('load', function() {
+    $("#hideAll").fadeOut(1000);
+});

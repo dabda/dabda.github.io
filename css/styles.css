@@ -277,8 +277,8 @@ div.Col-7{
   margin-top: 7%;
 }
 div.slika5{
-  width: 20%;
-  margin-left: 21%;
+  width: 12%;
+  margin-left: 28%;
   vertical-align:top;
   display: inline-block; 
 }
@@ -439,3 +439,17 @@ div.contact{
     font-size: 10px;
   }
 }
+
+
+/* nicer preload of page*/
+#hideAll
+ {
+   position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: white;
+   z-index: 999; /* Higher than anything else in the document */
+
+ }
