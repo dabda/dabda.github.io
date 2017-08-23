@@ -449,7 +449,7 @@ div.contact{
    right: 0px; 
    top: 0px; 
    bottom: 0px; 
-   background-color: white;
+   background-color: #fed600;
    z-index: 999; /* Higher than anything else in the document */
 
  }
