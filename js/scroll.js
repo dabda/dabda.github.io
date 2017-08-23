@@ -48,10 +48,10 @@ $(document).ready(function() {
 
     });
 });
+
 //var number=document.getElementById("visina").getAttribute('startOffset'); 
 //document.getElementById("visina").setAttribute("startOffset", "200");
 
-
-$.fn.scrollBottom = function() { 
-  return $(document).height() - this.scrollTop() - this.height(); 
-};
+//$.fn.scrollBottom = function() { 
+//  return $(document).height() - this.scrollTop() - this.height(); 
+//};

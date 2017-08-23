@@ -10,6 +10,7 @@ div{
   background-size: 100% auto;
   background-color: #fed600;
   overflow:hidden;
+  z-index: 100;
 }
 
 @font-face {
@@ -88,10 +89,15 @@ div.vektor{
 
 div.beer_can {
   width:40.2%;
+  margin-left: 0%;
+  margin-top: 0%;
   vertical-align:top;
   display: inline-block;
 }
 .gif {
+  width: 100%;
+}
+.mp4 {
   width: 100%;
 }
 div.rock_stage{
