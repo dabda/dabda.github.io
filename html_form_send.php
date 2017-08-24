@@ -8,40 +8,70 @@ if(isset($_POST['email'])) {
 	
 	function died($error) {
 		// your error code can go here
-		echo "We're sorry, but there's errors found with the form you submitted.<br /><br />";
-		echo $error."<br /><br />";
-		echo "Please go back and fix these errors.<br /><br />";
 		?>
 
 		<!-- place your own fail html below -->
 		<body>
 
 		<div class="fail">
-		  <span class="small_text red_text regular_rotalic">
-		      FAIL<br>
-		      <br>
-		      Thank you for contacting us.<br>
-		      We will be in touch with you very soon.<br>
+		  	<span class="medium_rotalic title_text">
+		    SORRY...<br>
+			</span>
+		    <br>
+		    <span class="regular_rotalic normal_text">
+		    <?php
+				echo "We're sorry, but there's errors found with the form you submitted.<br /><br />";
+				echo $error."<br /><br />";
+				echo "Please go back and fix these errors.<br /><br />";
+		    ?>
 		    </span>
 		</div>
 
 		<style>
-			body{
-			  background-color:#00b3f0;
+			@font-face {
+			  font-family: "regular_rotalic";
+			  src: url(../fonts/GT-Haptik-Regular-Rotalic.woff) format('woff');
 			}
-			.success{
-			margin-top: 20%;
+
+			@font-face {
+			  font-family: "light_rotalic";
+			  src: url(../fonts/GT-Haptik-Light-Rotalic.woff) format('woff');
+			}
+
+			@font-face {
+			  font-family: "medium_rotalic";
+			  src: url(../fonts/GT-Haptik-Medium-Rotalic.woff) format('woff');
+			}
+			.regular_rotalic{
+			  font-family: regular_rotalic;
+			}
+			.light_rotalic{
+			  font-family: light_rotalic;
+			}
+			.medium_rotalic{
+			  font-family: medium_rotalic;
+			}
+			.title_text{
+			  font-size: 1.45vw;
+			}
+			.normal_text{
+			  font-size: 1.3vw;
+			}
+			body{
+			  background-color:#ED1B55;
+			}
+			.fail{
+			color: white;
+			margin-top: 15%;
 			margin-left: 40%;
-			width:20%;
-			border: solid white;
-			-ms-transform: rotate(5deg); /* IE 9 */
-			-webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
-			transform: rotate5deg);
-			font-size: 1.5vw;
+			width:25%;
+			/*border: solid white;*/
+			-ms-transform: rotate(355deg); /* IE 9 */
+			-webkit-transform: rotate(355deg); /* Chrome, Safari, Opera */
+			transform: rotate(355deg);
 			}
 		</style>
 
-		</body>
 		<?php
 		die();
 	}
@@ -95,27 +125,58 @@ if(isset($_POST['email'])) {
 <body>
 
 <div class="success">
-  <span class="small_text red_text regular_rotalic">
-      SUCCESS<br>
-      <br>
-      Thank you for contacting us. We will be<br>
-      in touch with you very soon.<br>
+  	<span class="medium_rotalic title_text">
+    SUCCESS<br>
+	</span>
+    <br>
+    <span class="regular_rotalic normal_text">
+    Thank you for contacting us. We will be<br>
+    in touch with you very soon.<br>
     </span>
 </div>
 
 <style>
+	@font-face {
+	  font-family: "regular_rotalic";
+	  src: url(../fonts/GT-Haptik-Regular-Rotalic.woff) format('woff');
+	}
+
+	@font-face {
+	  font-family: "light_rotalic";
+	  src: url(../fonts/GT-Haptik-Light-Rotalic.woff) format('woff');
+	}
+
+	@font-face {
+	  font-family: "medium_rotalic";
+	  src: url(../fonts/GT-Haptik-Medium-Rotalic.woff) format('woff');
+	}
+	.regular_rotalic{
+	  font-family: regular_rotalic;
+	}
+	.light_rotalic{
+	  font-family: light_rotalic;
+	}
+	.medium_rotalic{
+	  font-family: medium_rotalic;
+	}
+	.title_text{
+	  font-size: 1.45vw;
+	}
+	.normal_text{
+	  font-size: 1.3vw;
+	}
 	body{
 	  background-color:#00B3F0;
 	}
 	.success{
-	margin-top: 20%;
+	color: white;
+	margin-top: 15%;
 	margin-left: 40%;
-	width:20%;
-	border: solid white;
+	width:25%;
+	/*border: solid white;*/
 	-ms-transform: rotate(355deg); /* IE 9 */
 	-webkit-transform: rotate(355deg); /* Chrome, Safari, Opera */
 	transform: rotate(355deg);
-	font-size: 1.5vw;
 	}
 </style>
 
