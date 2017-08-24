@@ -3,7 +3,6 @@ if(isset($_POST['email'])) {
 	
 	// CHANGE THE TWO LINES BELOW
 	$email_to = "damjan.vidonja@gmail.com";
-	
 	$email_subject = "WCFB festival 2017";
 	
 	
@@ -12,40 +11,67 @@ if(isset($_POST['email'])) {
 		echo "We're sorry, but there's errors found with the form you submitted.<br /><br />";
 		echo $error."<br /><br />";
 		echo "Please go back and fix these errors.<br /><br />";
+		?>
+
+		<!-- place your own fail html below -->
+		<body>
+
+		<div class="fail">
+		  <span class="small_text red_text regular_rotalic">
+		      FAIL<br>
+		      <br>
+		      Thank you for contacting us.<br>
+		      We will be in touch with you very soon.<br>
+		    </span>
+		</div>
+
+		<style>
+			body{
+			  background-color:#00b3f0;
+			}
+			.success{
+			margin-top: 20%;
+			margin-left: 40%;
+			width:20%;
+			border: solid white;
+			-ms-transform: rotate(5deg); /* IE 9 */
+			-webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+			transform: rotate5deg);
+			font-size: 1.5vw;
+			}
+		</style>
+
+		</body>
+		<?php
 		die();
 	}
 	
 	// validation expected data exists
 	if(!isset($_POST['first_name']) ||
-		!isset($_POST['last_name']) ||
 		!isset($_POST['email']) ||
 		!isset($_POST['comments'])) {
 		died('We are sorry, but there appears to be a problem with the form you submitted.');		
 	}
 	
 	$first_name = $_POST['first_name']; // required
-	$last_name = $_POST['last_name']; // required
 	$email_from = $_POST['email']; // required
 	$comments = $_POST['comments']; // required
 	
 	$error_message = "";
 	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-  if(!preg_match($email_exp,$email_from)) {
-  	$error_message .= 'The Email Address you entered does not appear to be valid.<br />';
-  }
+	if(!preg_match($email_exp,$email_from)) {
+		$error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+	}
 	$string_exp = "/^[A-Za-z .'-]+$/";
-  if(!preg_match($string_exp,$first_name)) {
-  	$error_message .= 'The First Name you entered does not appear to be valid.<br />';
-  }
-  if(!preg_match($string_exp,$last_name)) {
-  	$error_message .= 'The Last Name you entered does not appear to be valid.<br />';
-  }
-  if(strlen($comments) < 2) {
-  	$error_message .= 'The Comments you entered do not appear to be valid.<br />';
-  }
-  if(strlen($error_message) > 0) {
-  	died($error_message);
-  }
+	if(!preg_match($string_exp,$first_name)) {
+		$error_message .= 'The First Name you entered does not appear to be valid.<br />';
+	}
+	if(strlen($comments) < 2) {
+		$error_message .= 'The Comments you entered do not appear to be valid.<br />';
+	}
+	if(strlen($error_message) > 0) {
+		died($error_message);
+	}
 	$email_message = "Form details below.\n\n";
 	
 	function clean_string($string) {
@@ -54,16 +80,15 @@ if(isset($_POST['email'])) {
 	}
 	
 	$email_message .= "First Name: ".clean_string($first_name)."\n";
-	$email_message .= "Last Name: ".clean_string($last_name)."\n";
 	$email_message .= "Email: ".clean_string($email_from)."\n";
 	$email_message .= "Comments: ".clean_string($comments)."\n";
 	
 	
-// create email headers
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
+	// create email headers
+	$headers = 'From: '.$email_from."\r\n".
+	'Reply-To: '.$email_from."\r\n" .
+	'X-Mailer: PHP/' . phpversion();
+	@mail($email_to, $email_subject, $email_message, $headers);  
 ?>
 
 <!-- place your own success html below -->
@@ -73,8 +98,8 @@ $headers = 'From: '.$email_from."\r\n".
   <span class="small_text red_text regular_rotalic">
       SUCCESS<br>
       <br>
-      Thank you for contacting us.<br>
-      We will be in touch with you very soon.<br>
+      Thank you for contacting us. We will be<br>
+      in touch with you very soon.<br>
     </span>
 </div>
 
@@ -83,17 +108,15 @@ $headers = 'From: '.$email_from."\r\n".
 	  background-color:#00B3F0;
 	}
 	.success{
-	  width:20%;
-	  margin-top:30%;
-	  margin-left:40%;
-	  vertical-align:top;
-	  display: inline-block; 
-	  border: solid white;
-	  -ms-transform: rotate(355deg); /* IE 9 */
-	  -webkit-transform: rotate(355deg); /* Chrome, Safari, Opera */
-	  transform: rotate(355deg);
-	  font-size: 1.5vw;
-	  }
+	margin-top: 20%;
+	margin-left: 40%;
+	width:20%;
+	border: solid white;
+	-ms-transform: rotate(355deg); /* IE 9 */
+	-webkit-transform: rotate(355deg); /* Chrome, Safari, Opera */
+	transform: rotate(355deg);
+	font-size: 1.5vw;
+	}
 </style>
 
 </body>
