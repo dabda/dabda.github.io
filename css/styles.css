@@ -397,7 +397,7 @@ div.footer{
   width: 100%;
   resize: none;                   /* No resize */
   overflow: hidden;               /* No scroller */
-  border: solid 2px #00b3f0;
+  border: solid 1px #00b3f0;
   background-color: transparent;
   margin-bottom: 5%;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -406,11 +406,16 @@ div.footer{
 }
 .vnos:focus{
   outline: none !important;
-  border: solid 2px #ed1a55;
+  border: solid 1px #ed1a55;
 }
 .tipka{
-  border: solid 2px #00b3f0;
+  border: solid 1px #00b3f0;
   background-color: transparent;
+  cursor:pointer;
+}
+.tipka:hover{
+  background-color: #00b3f0;
+  color: white;
 }
 
 
