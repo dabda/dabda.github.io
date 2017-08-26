@@ -11,6 +11,7 @@ div{
   background-color: #fed600;
   overflow:hidden;
   z-index: 100;
+  position: relative;
 }
 
 @font-face {
@@ -39,13 +40,13 @@ div{
 }
 
 .title_text{
-  font-size: 1.45vw;
+  font-size: 1.35vw;
 }
 .normal_text{
-  font-size: 1.3vw;
+  font-size: 1.22vw;
 }
 .small_text{
-  font-size: 0.9vw;
+  font-size: 0.81vw;
 }
 .red_text{
   color:#ed1a55;
@@ -105,7 +106,6 @@ div.vektor{
 
 div.beer_can {
   width:40.2%;
-  margin-left: 0%;
   margin-top: 0%;
   vertical-align:top;
   display: inline-block;
@@ -358,6 +358,7 @@ div.Col-9{
 div.rules1{
   margin-left: 30.5%;
   margin-top: 2.5%;
+  margin-bottom: 10%;
   vertical-align:top;
   display: inline-block; 
   -ms-transform: rotate(355deg); /* IE 9 */
@@ -367,32 +368,13 @@ div.rules1{
 div.contact{
   width: 20%;
   margin-top: 0%;
-  margin-left: 10%;
-  margin-bottom: 0%;
+  margin-left: 8%;
   vertical-align:top;
   display: inline-block; 
   -ms-transform: rotate(355deg); /* IE 9 */
   -webkit-transform: rotate(355deg); /* Chrome, Safari, Opera */
   transform: rotate(355deg);
 }
-
-div.Col-10{
-  margin-top: 9%;
-  margin-bottom: 5%;
-}
-div.footer{
-  width:40%;
-  margin-left: 20%;
-  vertical-align:top;
-  display: inline-block;
-}
-#footer_bevog{
-  fill:#00b3f0;
-}
-.footer_svg{
-  overflow: visible;
-}
-
 .vnos{
   width: 100%;
   resize: none;                   /* No resize */
@@ -419,6 +401,21 @@ div.footer{
 }
 
 
+div.footer{
+  width: 38%;
+  margin-left: 21%;
+  position:absolute;
+  bottom: 2%;
+}
+#footer_bevog{
+  fill:#00b3f0;
+}
+.footer_svg{
+  overflow: visible;
+}
+
+
+
 /* do not group these rules */
 *::-webkit-input-placeholder {
     color: #7fd9f7;
@@ -436,19 +433,21 @@ div.footer{
     color: #7fd9f7;
 }
 
-@media (min-width: 768px) { 
+/*@media (min-width: 768px) { */
+@media (min-width: 0px) { 
   .container {
       width: 750px;
       margin: 0 auto;
+      height: 2320px;
   }
   .title_text {
-    font-size: 13px;
+    font-size: 10.4px;
   }
   .normal_text {
-    font-size: 11px;
+    font-size: 9.4px;
   }
   .small_text {
-    font-size: 6px;
+    font-size: 6.2px;
   }
 }
 
@@ -456,15 +455,16 @@ div.footer{
   .container {
       width: 970px;
       margin: 0 auto;
+      height: 3000px;
   }
   .title_text {
-    font-size: 16px;
+    font-size: 13.5px;
   }
   .normal_text {
-    font-size: 14px;
+    font-size: 12.2px;
   }
   .small_text {
-    font-size: 8px;
+    font-size: 8.1px;
   }
 }
 
@@ -472,15 +472,16 @@ div.footer{
   .container {
       width: 1170px;
       margin: 0 auto;
+      height: 3620px;
   }
   .title_text {
-    font-size: 17px;
+    font-size: 16.3px;
   }
   .normal_text {
-    font-size: 15px;
+    font-size: 14.7px;
   }
   .small_text {
-    font-size: 9px;
+    font-size: 9.8px;
   }
 }
 
@@ -488,6 +489,7 @@ div.footer{
   .container {
       width: 1430px;
       margin: 0 auto;
+      height: 4420px;
   }
   .title_text {
     font-size: 20px;

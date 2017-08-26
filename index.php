@@ -1,3 +1,23 @@
+<?php
+include("mdetect.php");
+//Instantiate the object to do our testing with.
+$uagent_obj = new uagent_info();
+//Detect iPhone Tier and iPads...
+if (($uagent_obj->DetectTierIphone() == $uagent_obj->true) ||
+($uagent_obj->DetectIpad() == $uagent_obj->true))
+   { header('Location: http://www.m.whocaresforbeer.com/'); }
+//Detect Rich CSS Tier...
+else if ($uagent_obj->DetectTierRichCss() == $uagent_obj->true)
+   { header('Location: http://www.m.whocaresforbeer.com/'); }
+//Detect All Other Mobile Devices...
+else if ($uagent_obj->DetectTierOtherPhones() == $uagent_obj->true)
+   { header('Location: http://www.m.whocaresforbeer.com/'); }
+//Else it's a regular PC browser -- send to regular desktop site
+else
+//do nothing
+?>
+
+
 <html id="top">
   <head>
     <meta charset="UTF-8">
@@ -24,23 +44,22 @@
         <a id="goto_food" href="#food"></a>
         <a id="goto_timeline" href="#timeline"></a>
 
-
-<!--   		  <div class="beer_can ">
-    			<video class="mp4" autoplay="autoplay" loop="loop" muted playsinline preload="auto">
-    			  <source src="img/can.mp4" type="video/mp4" />
-    			  <img class="gif" src="img/can.gif"  />
-    			</video>
+<!--         <div class="beer_can">
+          <video class="mp4" autoplay="autoplay" loop="loop" muted playsinline preload="auto">
+            <source src="img/can.mp4" type="video/mp4" />
+            <img class="gif" src="img/can_1x.gif"  />
+          </video>
         </div> -->
 
-        <div class="beer_can ">
-            <img class="gif" src="img/can.gif"  />
+        <div class="beer_can desktop">
+          <img class="gif" src="img/can_1x.gif"  />
         </div>
 
-        <div class="rock_stage ">
+        <div class="rock_stage desktop">
           <object type="image/svg+xml" data="img/rock_stage.svg"></object>
         </div>
 
-        <div class="datum ">
+        <div class="datum desktop">
           <object type="image/svg+xml" data="img/datum.svg"></object>
         </div>
 
@@ -347,9 +366,9 @@
           .vektor_footera{fill:none;}
         </style>
         <path id="MyFooter" class="vektor_footera" d="M0,136.76c70-1.5,135.14-69.68,204.5-56.5C265,91.76,302.32,163,392.34,147.09,479.84,131.59,490-17.24,585.51,2.26"/>
-          <text id="footer_text" fill="#ed1a55" font-size="12">
+          <text id="footer_text" fill="#ed1a55" class="small_text">
             <textPath xlink:href="#MyFooter" startOffset="30">
-              Copyright 2017 @ <a id="footer_bevog" class="enlarge" href="https://bevog.at/" target="_blank">Bevog Brewery</a>, Bad Radkersburg / e: <a id="footer_bevog" class="enlarge" href="mailto:info@bevog.at?Subject=Who%20Cares%20For%20Beer%20Festival%202017" target="_blank">info@bevog.at</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Made by: <a id="footer_bevog" class="enlarge" href="https://francfranc.si/" target="_blank">FRANCFRANC</a>
+              Copyright 2017 @ <a id="footer_bevog" class="enlarge" href="https://bevog.at/">Bevog Brewery</a>, Bad Radkersburg / e: <a id="footer_bevog" class="enlarge" href="mailto:info@bevog.at?Subject=Who%20Cares%20For%20Beer%20Festival%202017">info@bevog.at</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Made by: <a id="footer_bevog" class="enlarge" href="https://francfranc.si/">FRANCFRANC</a>
             </textPath>
           </text>
         </svg>
@@ -362,5 +381,6 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/scroll.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/switch_.js"></script>
 
 </html>
