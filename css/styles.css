@@ -513,5 +513,29 @@ div.footer{
    bottom: 0px; 
    background-color: #fed600;
    z-index: 999; /* Higher than anything else in the document */
-
  }
+
+ .loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 6em;
+    height: 6em;
+    animation: spin 2s linear infinite;
+
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -3em; /*set to a negative number 1/2 of your height*/
+    margin-left: -3em; /*set to a negative number 1/2 of your width*/
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
