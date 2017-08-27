@@ -504,30 +504,39 @@ div.footer{
 
 
 /* nicer preload of page*/
-#hideAll
- {
-   position: fixed;
-   left: 0px; 
-   right: 0px; 
-   top: 0px; 
-   bottom: 0px; 
-   background-color: #fed600;
-   z-index: 999; /* Higher than anything else in the document */
- }
+#hideAll{
+  position: fixed;
+  left: 0px; 
+  right: 0px; 
+  top: 0px; 
+  bottom: 0px; 
+  background-color: #ffffff;
+  z-index: 999; /* Higher than anything else in the document */
+}
 
- .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 6em;
-    height: 6em;
-    animation: spin 2s linear infinite;
-
-    position:fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -3em; /*set to a negative number 1/2 of your height*/
-    margin-left: -3em; /*set to a negative number 1/2 of your width*/
+.loader {
+  border-radius: 50%;
+  background-color: #fed600;
+  width: 6em;
+  height: 6em;
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -3em; /*set to a negative number 1/2 of your height*/
+  margin-left: -3em; /*set to a negative number 1/2 of your width*/
+}
+.bevog_logo {
+  /* 94.86 142.27 */
+  width: 2.5em;
+  height: 3.75em;
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -1.875em; /*set to a negative number 1/2 of your height*/
+  margin-left: -1.25em; /*set to a negative number 1/2 of your width*/
+  z-index: 3;
+  -webkit-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
 }
 
 @-webkit-keyframes spin {
