@@ -7,7 +7,8 @@ function HeadImage(className){
     this.className = className;
     
     /* Calculating the borders and step of the image */
-    var imageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+	var imageWidth = parent.document.body.clientHeight
+    //var imageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     step = imageWidth / numberOfPics;
 
     /* This function determines where the mouse pointer is relative to the image
