@@ -47,7 +47,7 @@
             window.onresize = init160x600();
 
             /* Setting the mousemove event caller */
-            parent.window.onmousemove = getMousePosition160x600;
+            parent.window.addEventListener('mousemove', getMousePosition160x600);
 
             /* This function is called on document ready, on load and on resize
              * and initiallizes all the images */
