@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="js/mouse_location.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="triglav_lab_ad_300x250_image-holder">
+            <img class="head-image 1" src="img/300x25000.jpg"/>
+            <img class="head-image 2" src="img/300x25001.jpg"/>
+            <img class="head-image 3" src="img/300x25003.jpg"/>
+            <img class="head-image 4" src="img/300x25004.jpg"/>
+            <img class="head-image 5" src="img/300x25005.jpg"/>
+            <img class="head-image 6" src="img/300x25006.jpg"/>
+            <img class="head-image 7" src="img/300x25007.jpg"/>
+            <img class="head-image 8" src="img/300x25008.jpg"/>
+            <img class="head-image 9" src="img/300x25009.jpg"/>
+            <img class="head-image 10" src="img/300x25010.jpg"/>
+            <img class="head-image 11" src="img/300x25011.jpg"/>
+            <img class="head-image 12" src="img/300x25012.jpg"/>
+            <img class="head-image 13" src="img/300x25013.jpg"/>
+            <img class="head-image 14" src="img/300x25014.jpg"/>
+            <img class="head-image 15" src="img/300x25015.jpg"/>
+            <img class="head-image 16" src="img/300x25016.jpg"/>
+            <img class="head-image 17" src="img/300x25017.jpg"/>
+            <img class="head-image 18" src="img/300x25018.jpg"/>
+            <img class="head-image 19" src="img/300x25019.jpg"/>
+            <img class="head-image 20" src="img/300x25020.jpg"/>
+            <img class="head-image 21" src="img/300x25021.jpg"/>
+            <img class="head-image 22" src="img/300x25022.jpg"/>
+            <img class="head-image 23" src="img/300x25023.jpg"/>
+            <img class="head-image 24" src="img/300x25024.jpg"/>
+        </div>
+
+        <script type="text/javascript">
+            
+            /* Declaring the global variables */
+            var mouseX;
+            var mouseY;
+            var img300x250;
+            
+            /* Calling the initialization function */
+            init();
+            
+            /* The images need to re-initialize on load and on resize, or else the areas
+             * where each image is displayed will be wrong. */
+            window.onload = init();
+            window.onresize = init();
+            
+            /* Setting the mousemove event caller */
+            window.onmousemove = getMousePosition;
+            
+            /* This function is called on document ready, on load and on resize
+             * and initiallizes all the images */
+            function init(){
+                
+                /* Instanciate the mouse position variables */
+                mouseX = 0;
+                mouseY = 0;
+                
+                /* Instanciate a HeadImage class for every image */
+                img300x250 = new HeadImage("triglav_lab_ad_300x250_image-holder");
+            }
+            
+            /* This function is called on mouse move and gets the mouse position. 
+             * It also calls the HeadImage function to display the correct image*/
+            function getMousePosition(event){
+                
+                /* Setting the mouse position variables */
+                mouseX = event.pageX;
+                mouseY = event.pageY;
+                
+                /*Calling the setImageDirection function of the HeadImage class
+                 * to display the correct image*/
+                img300x250.setImageDirection();
+            }
+            
+        </script>
+    </body>
+</html>

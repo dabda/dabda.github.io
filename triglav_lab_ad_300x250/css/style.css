@@ -1,0 +1,14 @@
+.triglav_lab_ad_300x250_image-holder{
+    position: absolute;
+}
+
+.head-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+body{
+	background: gray;
+}
