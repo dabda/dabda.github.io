@@ -48,7 +48,7 @@
             window.onresize = init();
 
             /* Setting the mousemove event caller */
-            parent.window.onmousemove = getMousePosition;
+            parent.window.onmousemove = getMousePosition300x600;
 
             /* This function is called on document ready, on load and on resize
              * and initiallizes all the images */
@@ -64,7 +64,7 @@
 
             /* This function is called on mouse move and gets the mouse position.
              * It also calls the HeadImage function to display the correct image*/
-            function getMousePosition(event){
+            function getMousePosition300x600(event){
 
                 /* Setting the mouse position variables */
                 mouseX = event.pageX;
