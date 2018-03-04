@@ -35,28 +35,26 @@
         <script type="text/javascript">
 
             /* Declaring the global variables */
-            var mouseX;
-            var mouseY;
+            var mouseX160x600;
             var img160x600;
 
             /* Calling the initialization function */
-            init();
+            init160x600();
 
             /* The images need to re-initialize on load and on resize, or else the areas
              * where each image is displayed will be wrong. */
-            window.onload = init();
-            window.onresize = init();
+            window.onload = init160x600();
+            window.onresize = init160x600();
 
             /* Setting the mousemove event caller */
             parent.window.onmousemove = getMousePosition160x600;
 
             /* This function is called on document ready, on load and on resize
              * and initiallizes all the images */
-            function init(){
+            function init160x600(){
 
                 /* Instanciate the mouse position variables */
-                mouseX = 0;
-                mouseY = 0;
+                mouseX160x600 = 0;
 
                 /* Instanciate a HeadImage class for every image */
                 img160x600 = new HeadImage("triglav_lab_ad_160x600_image-holder");
@@ -67,8 +65,7 @@
             function getMousePosition160x600(event){
 
                 /* Setting the mouse position variables */
-                mouseX = event.pageX;
-                mouseY = event.pageY;
+                mouseX160x600 = event.pageX;
 
                 /*Calling the setImageDirection function of the HeadImage class
                  * to display the correct image*/

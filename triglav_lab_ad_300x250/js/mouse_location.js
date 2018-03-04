@@ -14,7 +14,7 @@ function HeadImage(className){
     /* This function determines where the mouse pointer is relative to the image
      * and displays the correct image accordingly. */
     this.setImageDirection = function(){
-        slika = Math.round(mouseX/step) + 1;
+        slika = Math.round(mouseX300x250/step) + 1;
         for (const element of document.querySelectorAll("."+this.className+" img")) {
             element.style.zIndex = 0;
             if (element.classList.contains(slika.toString())){
