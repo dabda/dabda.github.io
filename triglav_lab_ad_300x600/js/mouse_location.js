@@ -2,12 +2,13 @@ var className;
 var numberOfPics=24;
 
 function HeadImage(className){
-    
+
     /* Setting the global instance of classname to the given parameter*/
     this.className = className;
-    
+
     /* Calculating the borders and step of the image */
-    var imageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var imageWidth = parent.document.body.clientWidth
+    //var imageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     step = imageWidth / numberOfPics;
 
     /* This function determines where the mouse pointer is relative to the image
