@@ -37,7 +37,11 @@
 
         <script type="text/javascript">
 
-            document.getElementsByClassName("10").style.zIndex = "1";
+            for (const element of document.querySelectorAll(".triglav_lab_ad_300x250_image-holder"+" img")) {
+                if (element.classList.contains("10")){
+                    element.style.zIndex = 1;
+                }
+            }
             
             /* Declaring the global variables */
             var mouseX300x250;
