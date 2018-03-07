@@ -1,15 +1,18 @@
-* {
-    margin: 0px;
-    padding: 0px;
- }
-
 .triglav_lab_ad_300x250_image-holder{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     position: absolute;
 }
 
 .head-image{
-    position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
     z-index: 0;
 }
