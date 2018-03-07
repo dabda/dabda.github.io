@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="triglav_lab_300x600">
+<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -45,9 +45,7 @@
 
             /* Declaring the global variables */
             var mouseX300x600;
-            var mouseX300x600_inside;
             var img300x600;
-            var img300x600_inside;
 
             /* Calling the initialization function */
             init300x600();
@@ -59,7 +57,6 @@
 
             /* Setting the mousemove event caller */
             parent.window.addEventListener('mousemove', getMousePosition300x600);
-            window.addEventListener('mousemove', getMousePosition300x600_inside);
 
             /* This function is called on document ready, on load and on resize
              * and initiallizes all the images */
@@ -67,11 +64,9 @@
 
                 /* Instanciate the mouse position variables */
                 mouseX300x600 = 0;
-                mouseX300x600_inside = 0;
 
                 /* Instanciate a HeadImage class for every image */
                 img300x600 = new HeadImage("triglav_lab_ad_300x600_image-holder");
-                img300x600_inside = new HeadImage_inside("triglav_lab_ad_300x600_image-holder");
             }
 
             /* This function is called on mouse move and gets the mouse position.
@@ -84,16 +79,6 @@
                 /*Calling the setImageDirection function of the HeadImage class
                  * to display the correct image*/
                 img300x600.setImageDirection();
-            }
-
-            function getMousePosition300x600_inside(event){
-
-                /* Setting the mouse position variables */
-                mouseX300x600_inside = event.pageX;
-
-                /*Calling the setImageDirection function of the HeadImage class
-                * to display the correct image*/
-                img300x600_inside.setImageDirection();
             }
 
         </script>
