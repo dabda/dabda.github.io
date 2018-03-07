@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+ }s
+
 .triglav_lab_ad_300x600_image-holder{
     position: absolute;
 }
@@ -7,8 +12,4 @@
     top: 0;
     left: 0;
     z-index: 0;
-}
-
-body{
-	background: gray;
 }
