@@ -1,5 +1,5 @@
 var className;
-var numberOfPics=24;
+var numberOfPics=17;
 
 function HeadImage(className){
 
